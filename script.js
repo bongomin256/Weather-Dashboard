@@ -81,7 +81,7 @@ var fetchBtnHandler = function (event) {
     var searchBtn = event.target.id;
 
     // storing the value of the inputs in cityName variable
-    var cityName = cityNameInput.value.trim()
+    var cityName = cityNameInput.value.trim().toUpperCase()
     
     if (cityName) {
         geoCoord(cityName);
@@ -105,7 +105,7 @@ var geoURl = 'http://api.openweathermap.org/geo/1.0/direct?q={city name},{state 
 // creating a function that fetches the coordinates of the citys
 var geoCoord = function (cityName) {
    
-    var geoApiURl = 'http://api.openweathermap.org/geo/1.0/direct?q=' + cityName + '&limit=5&appid=' + apiKey;
+    var geoApiURl = 'https://api.openweathermap.org/geo/1.0/direct?q=' + cityName + '&limit=5&appid=' + apiKey;
     fetch(geoApiURl)
      .then(function (response) {
       return response.json();
@@ -114,7 +114,7 @@ var geoCoord = function (cityName) {
         var dataAquired = data[0];
         getWeather(dataAquired);
     
-     })
+    })
 };
 
 var oneCallApiUrl = 'https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}'
