@@ -13,25 +13,25 @@
        <header class="jumbotron bg-dark text-light text-center p-2">
            <h1>Weather Dashboard</h1>
        </header>
-       <main class="d-flex">
-           <section class="col-12 col-md-3">
-               <form class="mt-2">
-                    <label for="City-input" class="bold">Search for a City</label>
+       <main class="d-flex justify-content-center flex-wrap">
+           <section class="col-12 col-md-3 my-3 custom-search custom">
+               <form">
+                    <label for="City-input" class="bold">Search for a City:</label>
                     <input type="text" id="city-input"   class="form-control mt-3 input-lg"  placeholder="Seattle">
                     <button id="search"class="btn search-btn btn-primary w-100 mt-3" type="search">search</button>
                </form>
                <hr/>
-               <div class="search-history">
+               <div class=" search-history">
                    <!-- this is where the search history will go -->
                </div>
            </section>
-           <section id="main-section" class="col-12 col-md-9 ms-2">
+           <section id="main-section" class="col-12 col-md-8 ms-md-4 my-3 custom">
                <article id="main-top">
                    <div class="current-condition">
-                        <div class="d-flex w-header mt-2">
-                            <h2 id="city-name">London</h2>
-                            <h3 id="date">03/29/2022</h3>
-                            <img id="weather-icon"  src="" alt="Weather icon">
+                        <div class="d-flex">
+                            <h3 class="align-self-center w-header" id="city-name"></h3>
+                            <h3 class="align-self-center w-header">(<span id="date"></span>)</h3>
+                            <img class="align-self-center w-header" id="weather-icon"  src="" alt="Weather icon">
                         </div>
                         <p>Temp: <span id="temp"></span> &#8457</p>
                         <p>Wind: <span id="wind-speed"></span> MPH</p>
@@ -43,7 +43,18 @@
                    <div class="forecast mt-2 ms-2">
                        <h2>5-Days Forecast</h2>
                        <div class="row">
-                           <div class="col-sm-10 col-md-4 col-lg-2 p-1">
+                           <div class="col-12 col-md-4 col-lg-2 p-1">
+                               <div class="card">
+                                   <div> 
+                                       <h3 class="date"></h3>
+                                       <img class="weather-icon"  src="" alt="">
+                                       <p>Temp: <span class="temp"></span> &#8457</p>
+                                       <p>Wind: <span class="wind-speed"></span> MPH</p>
+                                       <p>Humidity: <span class="humidity"></span> %</p>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-12 col-md-4 col-lg-2 p-1">
                                <div class="card">
                                    <div>
                                        <h3 class="date"></h3>
@@ -54,7 +65,18 @@
                                    </div>
                                </div>
                            </div>
-                           <div class="col-sm-10 col-md-4 col-lg-2 p-1">
+                           <div class="col-12 col-md-4 col-lg-2 p-1">
+                               <div class="card">
+                                   <div> 
+                                       <h3 class="date"></h3>
+                                       <img class="weather-icon"  src="" alt="">
+                                       <p>Temp: <span class="temp"></span> &#8457</p>
+                                       <p>Wind: <span class="wind-speed"></span> MPH</p>
+                                       <p>Humidity: <span class="humidity"></span> %</p>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-12 col-md-4 col-lg-2 p-1">
                                <div class="card">
                                    <div>
                                        <h3 class="date"></h3>
@@ -65,29 +87,7 @@
                                    </div>
                                </div>
                            </div>
-                           <div class="col-sm-10 col-md-4 col-lg-2 p-1">
-                               <div class="card">
-                                   <p class="date">03/28/2022</p>
-                                   <img class="weather-icon"  src="" alt="">
-                                   <div>
-                                       <p>Temp: <span class="temp">70</span> &#8457</p>
-                                       <p>Wind: <span class="wind-speed">59</span> MPH</p>
-                                       <p>Humidity: <span class="humidity">84</span> %</p>
-                                   </div>
-                               </div>
-                           </div>
-                           <div class="col-sm-10 col-md-4 col-lg-2 p-1">
-                               <div class="card">
-                                   <div>
-                                       <h3 class="date"></h3>
-                                       <img class="weather-icon"  src="" alt="">
-                                       <p>Temp: <span class="temp"></span> &#8457</p>
-                                       <p>Wind: <span class="wind-speed"></span> MPH</p>
-                                       <p>Humidity: <span class="humidity"></span> %</p>
-                                   </div>
-                               </div>
-                           </div>
-                           <div class="col-sm-10 col-md-4 col-lg-2 p-1">
+                           <div class="col-12 col-md-4 col-lg-2  p-1">
                                <div class="card">
                                    <div>
                                        <h3 class="date"></h3>
