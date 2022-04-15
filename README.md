@@ -7,12 +7,19 @@ This is an weather application that enable the user to put in the name of the ci
 - CSS
 - HTML
 - JavaScript
+- jQuery
+- Bootstrap
 
 # Links
 
 - To deploy application: https://bongomin256.github.io/Weather-Dashboard/
 - To the application's repo: https://github.com/bongomin256/Weather-Dashboard
 
-# Screenshot of the application
+# License
+
+- MIT
+
+# Screenshots of the application
 
 ![screenshot](./image/screenshot.png)
+![screenshot](./image/bongomin256.github.io_Weather-Dashboard_.png)
