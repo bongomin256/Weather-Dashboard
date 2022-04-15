@@ -10,8 +10,8 @@ This is an weather application that enable the user to put in the name of the ci
 
 # Links
 
-- To deploy application:
-- To the application's repo:
+- To deploy application: https://bongomin256.github.io/Weather-Dashboard/
+- To the application's repo: https://github.com/bongomin256/Weather-Dashboard
 
 # Screenshot of the application
 
